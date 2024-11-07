@@ -1,7 +1,7 @@
 :root {
-  --pink: hsl(0, 0%, 100%);
-  --bg: #0e0e8a;
-  --shadow: 0 2px 2px rgba(8, 0, 254, 0.5);
+  --pink: #dcc7b4;
+  --bg: #ffffff;
+  --shadow: 0 2px 2px rgb(0, 0, 0);
 }
 
 body {
@@ -17,10 +17,10 @@ body {
   left: 0;
   width: 100%;
   height: 100%;
-  background-image: url(img/Backgrund/1.jpg);
+  background-image: url(img/3.jpg);
   background-size: cover;
   background-position: center;
-  filter: blur(5px); /* Efek blur hanya pada background */
+  /* filter: blur(5px); Efek blur hanya pada background */
   z-index: -1; /* Pastikan berada di belakang konten */
 }
 
@@ -51,14 +51,14 @@ body {
 }
 
 .hero a {
-  color: rgb(0, 0, 0);
+  color: var(--bg);
   background-color: var(--pink);
-  box-shadow: var(--shadow);
 }
 
 .hero a:hover {
-  background-color: rgb(0, 0, 0);
+  background-color: var(--bg);
   color: var(--pink);
+  border-color: #dcc7b4;
 }
 
 .mynavbar {
@@ -85,51 +85,25 @@ body {
   text-transform: uppercase;
   color: var(--pink);
 }
+
 .home,
+.info,
 .story,
-.presence {
+.gallery,
+.presence,
+.hadiah {
+  background-image: url(img/20.png);
   background-size: cover;
+  background-position: center;
   min-height: 100vh;
   margin-top: -6rem;
   padding-top: 8rem;
   padding-bottom: 5rem;
 }
 
-.home {
-  background-image: url(img/Backgrund/3.jpg);
-  background-size: cover;
-  background-position: center;
-}
-.story {
-  background-image: url(img/Backgrund/2.jpg);
-  background-size: cover;
-  background-position: center;
-}
-.presence {
-  background-image: url(img/Backgrund/4.jpg);
-  background-size: cover;
-  background-position: center;
-}
-.info {
-  background-image: url(img/Backgrund/5.jpg);
-  background-size: cover;
-  background-position: center;
-}
-.gallery {
-  background-image: url(img/Backgrund/6.jpg);
-  background-size: cover;
-  background-position: center;
-}
-.hadiah {
-  background-image: url(img/Backgrund/7.jpg);
-  background-size: cover;
-  background-position: center;
-}
-
 .info,
 .gallery,
 .hadiah {
-  background-size: cover;
   min-height: 100vh;
   padding-top: 8rem;
   padding-bottom: 5rem;
@@ -147,13 +121,13 @@ body {
   font-weight: bold;
 }
 .home h3 {
-  color: rgb(198, 198, 198);
+  color: var(--pink);
   font-size: 1.5rem;
   margin-bottom: 1rem;
 }
 .home p {
   font-size: 1rem;
-  color: rgb(247, 253, 255);
+  color: var(--pink);
 }
 
 .home .couple {
@@ -168,17 +142,16 @@ body {
 
 .home .couple img {
   width: 100%;
-  border: 4px solid var(--bg);
+  border: 4px solid var(--pink);
 }
 
 .home .heart {
   width: 50px;
   height: 50px;
-  background-color: var(--pink);
+  background-color: var(--bg);
   display: flex;
   border-radius: 50%;
-  border: 2px solid black;
-  box-shadow: var(--shadow);
+  border: 2px solid var(--pink);
   position: absolute;
   left: 50%;
   transform: translate(-50%, 130%);
@@ -196,6 +169,11 @@ body {
   padding-bottom: 12rem;
 }
 
+.info a {
+  color: var(--bg);
+  background-color: var(--pink);
+}
+
 .info .alamat {
   font-size: 1rem;
 }
@@ -207,7 +185,7 @@ body {
 
 .info .card {
   background-color: rgba(225, 225, 225, 0.2) !important;
-  color: rgb(255, 255, 255) !important;
+  color: var(--pink) !important;
   border: 1px solid var(--pink);
 }
 .info .card-header {
@@ -515,9 +493,14 @@ footer li {
     height: 140px;
   }
   .mynavbar .offcanvas {
-    background-image: url(img/Backgrund/11.jpg);
+    background-image: url(img/20.png);
     background-size: cover;
     background-position: center;
+    max-width: 200px;
+  }
+
+  .mynavbar button {
+    color: var(--pink);
   }
 
   /* .mynavbar .offcanvas-body,

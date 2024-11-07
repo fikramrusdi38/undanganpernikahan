@@ -17,7 +17,7 @@
   justify-content: center;
   float: left;
   margin: 10px;
-  background-color: rgb(255, 255, 255);
+  background-color: #dcc7b4;
   clip-path: polygon(
     50% 0%,
     61% 35%,
@@ -30,7 +30,7 @@
     2% 35%,
     39% 35%
   );
-  color: black;
+  color: rgb(255, 255, 255);
 }
 .simply-countdown > .simply-section .simply-amount,
 .simply-countdown > .simply-section .simply-word {
