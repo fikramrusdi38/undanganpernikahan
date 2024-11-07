@@ -1,0 +1,556 @@
+:root {
+  --pink: hsl(0, 0%, 100%);
+  --bg: #0e0e8a;
+  --shadow: 0 2px 2px rgba(8, 0, 254, 0.5);
+}
+
+body {
+  font-size: 1.2rem;
+  font-family: "Work Sans", sans-serif;
+  min-height: 4000px;
+}
+
+.hero::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url(img/Backgrund/1.jpg);
+  background-size: cover;
+  background-position: center;
+  filter: blur(5px); /* Efek blur hanya pada background */
+  z-index: -1; /* Pastikan berada di belakang konten */
+}
+
+.hero {
+  position: relative; /* Memastikan konten berada di atas background yang blur */
+  min-height: 100vh;
+  z-index: 1;
+}
+
+.hero h1,
+.hero h4,
+.hero p {
+  text-shadow: var(--shadow);
+}
+
+.hero h1 {
+  font-family: "sacramento", cursive;
+  font-size: 6rem;
+  color: var(--pink);
+}
+
+.hero h4 {
+  font-size: 1.6rem;
+}
+
+.hero p {
+  font-size: 1.5rem;
+}
+
+.hero a {
+  color: rgb(0, 0, 0);
+  background-color: var(--pink);
+  box-shadow: var(--shadow);
+}
+
+.hero a:hover {
+  background-color: rgb(0, 0, 0);
+  color: var(--pink);
+}
+
+.mynavbar {
+  background-color: rgba(255, 255, 255, 0.299) !important;
+  backdrop-filter: blur(4px);
+}
+
+.mynavbar .offcanvas {
+  height: 100vh;
+  display: flex;
+  padding-right: 0;
+}
+
+.mynavbar .navbar-brand,
+.mynavbar .offcanvas-title {
+  font-family: "Sacramento", cursive;
+  font-size: 3rem;
+  font-weight: bold;
+  color: var(--pink);
+}
+
+.mynavbar .nav-link {
+  font-weight: 500;
+  text-transform: uppercase;
+  color: var(--pink);
+}
+.home,
+.story,
+.presence {
+  background-size: cover;
+  min-height: 100vh;
+  margin-top: -6rem;
+  padding-top: 8rem;
+  padding-bottom: 5rem;
+}
+
+.home {
+  background-image: url(img/Backgrund/3.jpg);
+  background-size: cover;
+  background-position: center;
+}
+.story {
+  background-image: url(img/Backgrund/2.jpg);
+  background-size: cover;
+  background-position: center;
+}
+.presence {
+  background-image: url(img/Backgrund/4.jpg);
+  background-size: cover;
+  background-position: center;
+}
+.info {
+  background-image: url(img/Backgrund/5.jpg);
+  background-size: cover;
+  background-position: center;
+}
+.gallery {
+  background-image: url(img/Backgrund/6.jpg);
+  background-size: cover;
+  background-position: center;
+}
+.hadiah {
+  background-image: url(img/Backgrund/7.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+.info,
+.gallery,
+.hadiah {
+  background-size: cover;
+  min-height: 100vh;
+  padding-top: 8rem;
+  padding-bottom: 5rem;
+}
+
+.home h2,
+.info h2,
+.story h2,
+.gallery h2,
+.presence h2,
+.hadiah h2 {
+  color: var(--pink);
+  font-family: "Sacramento", cursive;
+  font-size: 5rem;
+  font-weight: bold;
+}
+.home h3 {
+  color: rgb(198, 198, 198);
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+.home p {
+  font-size: 1rem;
+  color: rgb(247, 253, 255);
+}
+
+.home .couple {
+  margin-top: 100px;
+}
+
+.home .couple h3 {
+  font-family: "Sacramento";
+  font-size: 2.5rem;
+  color: var(--pink);
+}
+
+.home .couple img {
+  width: 100%;
+  border: 4px solid var(--bg);
+}
+
+.home .heart {
+  width: 50px;
+  height: 50px;
+  background-color: var(--pink);
+  display: flex;
+  border-radius: 50%;
+  border: 2px solid black;
+  box-shadow: var(--shadow);
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, 130%);
+}
+
+.home .heart i {
+  margin: auto;
+  color: black;
+}
+
+.info {
+  min-height: 100%;
+  color: var(--pink);
+  padding-top: 10rem;
+  padding-bottom: 12rem;
+}
+
+.info .alamat {
+  font-size: 1rem;
+}
+
+.info .description {
+  font-size: 1rem;
+  font-weight: 300;
+}
+
+.info .card {
+  background-color: rgba(225, 225, 225, 0.2) !important;
+  color: rgb(255, 255, 255) !important;
+  border: 1px solid var(--pink);
+}
+.info .card-header {
+  border-bottom: 1px solid var(--pink);
+  text-transform: uppercase;
+  letter-spacing: 0.1rem;
+}
+
+.info .card-body {
+  font-size: 1rem;
+}
+
+.info .card-footer {
+  border-top: 1px solid var(--pink);
+  font-size: 1rem;
+  font-weight: 300;
+}
+
+.story span,
+.gallery span,
+.hadiah span,
+.presence span {
+  text-transform: uppercase;
+  color: var(--pink);
+  font-size: 1rem;
+  letter-spacing: 1px;
+  display: block;
+  margin-bottom: 1rem;
+}
+
+.story h3 {
+  color: var(--pink);
+}
+
+.story p,
+.gallery p,
+.presence p,
+.hadiah p {
+  color: var(--pink);
+  font-size: 1rem;
+  font-weight: 300;
+}
+
+.timeline {
+  list-style: none;
+  padding: 1.4rem 0;
+  margin-top: 1rem;
+  position: relative;
+}
+
+.timeline::before {
+  content: "";
+  top: 0;
+  bottom: 0;
+  position: absolute;
+  width: 1px;
+  background-color: var(--pink);
+  left: 50%;
+}
+
+.timeline li {
+  margin-bottom: 1.5rem;
+  position: relative;
+}
+
+/* Kalau semuanya sudah jadi elemen ini akan kita coba hilangin untuk tau efeknya apa */
+/* dari sini */
+.timeline li::before,
+.timeline li::after {
+  content: "";
+  display: table;
+}
+
+.timeline li::after {
+  clear: both;
+}
+/* sampai sini */
+
+.timeline li .timeline-image {
+  width: 160px;
+  height: 160px;
+  background-color: var(--pink);
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  border-radius: 50%;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.timeline li .timeline-panel {
+  width: 40%;
+  float: left;
+  border: 1px solid var(--pink);
+  padding: 2rem;
+  position: relative;
+  border-radius: 10px;
+}
+
+.timeline li .timeline-panel::before {
+  content: "";
+  display: inline-block;
+  position: absolute;
+  border-top: 15px solid transparent;
+  border-left: 15px solid var(--pink);
+  border-right: 0 solid var(--pink);
+  border-bottom: 15px solid transparent;
+  top: 80px;
+  right: -15px;
+}
+
+.timeline li .timeline-panel::after {
+  content: "";
+  display: inline-block;
+  position: absolute;
+  border-top: 15px solid transparent;
+  border-left: 15px solid white;
+  border-right: 0 solid white;
+  border-bottom: 14px solid transparent;
+  top: 81px;
+  right: -13px;
+}
+
+.timeline li.timeline-inverted .timeline-panel {
+  float: right;
+}
+
+.timeline li.timeline-inverted .timeline-panel::before {
+  border-left-width: 0;
+  border-right-width: 15px;
+  left: -15px;
+  right: auto;
+}
+
+.timeline li.timeline-inverted .timeline-panel::after {
+  border-left-width: 0;
+  border-right-width: 14px;
+  left: -13px;
+  right: auto;
+}
+
+.gallery,
+.presence,
+.hadiah {
+  background-color: #d6d6d6;
+}
+
+.presence input::placeholder {
+  font-style: italic;
+}
+
+.presence .col-12 .mb-3 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: var(--pink);
+}
+
+.presence button {
+  background-color: var(--pink);
+  margin-top: 8px;
+  width: 6.6rem;
+}
+
+.presence select,
+.presence input {
+  background-color: var(--pink);
+}
+
+.presence button:hover {
+  background-color: rgb(12, 63, 152);
+  color: var(--pink);
+  border: 2px solid white;
+}
+
+footer a {
+  color: rgb(0, 0, 0);
+  text-decoration: none;
+}
+
+footer {
+  padding: 2rem;
+  background-color: var(--pink);
+  color: rgb(0, 0, 0);
+}
+
+footer ul {
+  padding-left: 0;
+  margin-bottom: 0.2rem;
+}
+
+footer a:hover {
+  color: #ff0000;
+}
+
+footer li {
+  list-style: none;
+  display: inline;
+  margin: 0.7rem;
+}
+
+.audio-icons {
+  width: 3rem;
+  height: 3rem;
+  font-size: 3rem;
+  position: fixed;
+  bottom: 3rem;
+  right: 3rem;
+  color: white;
+  animation: putar 3s linear infinite;
+  mix-blend-mode: difference;
+  transform-origin: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  line-height: 0;
+}
+
+@keyframes putar {
+  from {
+    transform: rotate(0);
+  }
+  to {
+    transform: rotate(360deg);
+    /* di css bisa pake transform: (1turn); */
+  }
+}
+
+/* Media Query */
+/* Extra large */
+@media (max-width: 1200px) {
+  .home .heart {
+    transform: translate(-50%, 45px);
+  }
+}
+
+/* laptop */
+@media (max-width: 992px) {
+  html {
+    font-size: 75%;
+  }
+  .simply-countdown > .simply-section {
+    padding: 70px;
+  }
+  .home .heart {
+    display: none;
+  }
+
+  .timeline::before {
+    left: 60px;
+  }
+
+  .timeline li .timeline-image {
+    left: 15px;
+    margin-left: 45px;
+    top: 16px;
+  }
+
+  .timeline li .timeline-panel {
+    width: calc((100% - 200px));
+    float: right;
+  }
+
+  .timeline li .timeline-panel::before {
+    border-left-width: 0;
+    border-right-width: 15px;
+    left: -15px;
+    right: auto;
+  }
+
+  .timeline li .timeline-panel::after {
+    border-left-width: 0;
+    border-right-width: 14px;
+    left: -13px;
+    right: auto;
+  }
+}
+
+/* tablet */
+@media (max-width: 768px) {
+  html {
+    font-size: 65%;
+  }
+  .simply-countdown .simply-section {
+    padding: 60px;
+    margin: 5px;
+  }
+  .mynavbar .nav-link {
+    font-size: 2rem;
+    text-align: center;
+  }
+  .mynavbar .nav-link #nav {
+    position: absolute;
+    padding-top: 40rem;
+  }
+
+  .sticky-top {
+    overflow: hidden;
+  }
+
+  .timeline li .timeline-image {
+    width: 140px;
+    height: 140px;
+  }
+  .mynavbar .offcanvas {
+    background-image: url(img/Backgrund/11.jpg);
+    background-size: cover;
+    background-position: center;
+  }
+
+  /* .mynavbar .offcanvas-body,
+  .mynavbar .offcanvas-header {
+  } */
+}
+
+/* mobile phone */
+@media (max-width: 576px) {
+  html {
+    font-size: 60%;
+  }
+
+  .simply-countdown > .simply-section {
+    padding: 45px;
+    margin: 3px;
+  }
+
+  .timeline li .timeline-image {
+    width: 80px;
+    height: 80px;
+  }
+
+  .timeline li .timeline-panel {
+    width: 70%;
+    transform: translateX(-15px);
+  }
+
+  .timeline li .timeline-panel::before {
+    top: 30px;
+  }
+
+  .timeline li .timeline-panel::after {
+    top: 31px;
+  }
+}
